@@ -5,6 +5,8 @@ date: 2024-12-17T14:19:18+06:00
 tags:
   - clippings
 ---
+[[Here is without frontmatter]]
+
 This article provides an overview of servers, databases, routing, and anything else that happens between when a client makes a request and receives a response.
 
 Software engineers seem to always be discussing the front-end and the back-end of their apps. But what exactly does this mean?

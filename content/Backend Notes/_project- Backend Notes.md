@@ -2,18 +2,17 @@
 
 - [[_project- Backend Notes]]
 
-## Warm up
+ ## 🔥Warm up
 
-- [[Backend Development]]
-- [[Backend Developer Roadmap 2024]]
-- [[Top 10 Backend Technologies 2024]]
+- [[Backend Development]]  
+- [[Backend Developer Roadmap 2024]]  
+- [[Top 10 Backend Technologies 2024]]  
 
 
-## References
+## 📚 References
 
-- Roadmap from BS23 source: _abdullah
-![[Roadmap_from_BS23.html]]
-
+- Roadmap from BS23 source: _abdullah  
+  ![[Roadmap_from_BS23.html]]  
 
 
 

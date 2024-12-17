@@ -53,9 +53,9 @@ This site is a growing project, and I'll be adding new content regularly. If the
 
 ## 📬 Connect with Me
 
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **GitHub**: [github.com/yourusername](https://github.com/MdAshrafulIslam1998)
+- **LinkedIn**: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/mashrafulislam)
+- **Email**: [your.email@example.com](mailto:your.mdashrafulislam.inbox@gmail.com)
 
 ---
 

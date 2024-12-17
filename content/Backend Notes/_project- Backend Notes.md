@@ -9,6 +9,8 @@
 - [[Top 10 Backend Technologies 2024]]  
 - [[What Does a Back-End Developer Do]]
 - [[What Does a Front-End Developer Do]]
+- [[Caleb Curry Backend Development mind map]]
+
 ## ☢️ Particle research
 - [[particle findings from Globipay project]]
 

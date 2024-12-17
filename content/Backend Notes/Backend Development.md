@@ -22,8 +22,10 @@ Table of Content
 
 ## What is Backend Development?
 
-Backend Development refers to the server-side development of the web application. It is the part of the application where the server and database reside and the logics is build to perform operations. It includes the main features and functionalities of the application on the server. Programming languages for the backend are mainly Node. JS (for JavaScript), Django (for Python), Spring (Java), etc.
+Backend Development refers to the [[server-side]] development of the web application. It is the part of the application where the server and database reside and the logics is build to perform operations. It includes the main features and functionalities of the application on the server. Programming languages for the backend are mainly Node. JS (for JavaScript), Django (for Python), Spring (Java), etc.
 
+
+[[What Does a Front-End Developer Do]]
 ## Backend Development Roadmap
 
 - Knowledge of Web Server

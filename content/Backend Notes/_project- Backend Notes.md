@@ -8,6 +8,9 @@
 - [[Backend Developer Roadmap 2024]]  
 - [[Top 10 Backend Technologies 2024]]  
 
+## ☢️ Particles research
+- [[particles findings from Globipay project]]
+
 
 ## 📚 References
 

@@ -1,9 +1,9 @@
 ---
-title: "Back-End Web Architecture | Codecademy"
-permalink: "https://www.codecademy.com/article/back-end-architecture"
-date: "2024-12-17T14:19:18+06:00"
+title: Intro from Code Academy
+permalink: https://www.codecademy.com/article/back-end-architecture
+date: 2024-12-17T14:19:18+06:00
 tags:
-  - "clippings"
+  - clippings
 ---
 This article provides an overview of servers, databases, routing, and anything else that happens between when a client makes a request and receives a response.
 

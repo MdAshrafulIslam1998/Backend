@@ -4,11 +4,6 @@
 
  ## 🔥Warm up
 
-- [[Backend Development]]  
-- [[Backend Developer Roadmap 2024]]  
-- [[Top 10 Backend Technologies 2024]]  
-- [[What Does a Back-End Developer Do]]
-- [[What Does a Front-End Developer Do]]
 - [[Caleb Curry Backend Development mind map]]
 
 ## ☢️ Particle research
@@ -16,7 +11,6 @@
 
 ## 📚 References
 
-- [[server-side]]
 - Roadmap from BS23 source: _abdullah  
   ![[Roadmap_from_BS23.html]]  
   

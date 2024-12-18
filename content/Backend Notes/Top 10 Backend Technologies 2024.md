@@ -5,6 +5,7 @@ date: "2024-12-17T21:07:27+06:00"
 tags:
   - "clippings"
 ---
+
 To provide any responsive and effective software solution, ****frontend****, and ****backend**** are the two most essential technologies that work together. A ****back-end framework**** is used to create server-side web architectures stably and efficiently. ****Backend technologies**** focus on improving the hidden aspects of the websites and are very important for the proper execution of any ****web application****. It enables the smooth creation and maintenance of a website.
 
 ![Top Backend Technologies ](https://media.geeksforgeeks.org/wp-content/uploads/20230623155707/Top-10-Backend-Technologies-That-You-Must-Know.webp)

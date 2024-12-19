@@ -5,9 +5,9 @@
 
 ---
 
-## 🔕 Todo
+## 🔕 ToDo
 
- - [ ] https://www.youtube.com/watch?v=4UgbU0nzprg
+ - [x] https://www.youtube.com/watch?v=4UgbU0nzprg
  - [ ] I think I have to learn JAVA first
  - [ ] first lets see the backend developers what they tells
  - [ ] what is the process for 2024 to learn Backend

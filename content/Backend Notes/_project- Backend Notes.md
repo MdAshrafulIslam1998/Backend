@@ -7,6 +7,7 @@
 
 ## 🔕 ToDo
 
+ - [ ] lets start again from 5.30 PM
  - [x] https://www.youtube.com/watch?v=4UgbU0nzprg
  - [ ] I think I have to learn JAVA first
  - [ ] first lets see the backend developers what they tells

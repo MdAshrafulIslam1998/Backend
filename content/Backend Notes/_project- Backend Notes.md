@@ -2,12 +2,21 @@
 
 - [[_project- Backend Notes]]
 
- ## 🔥Warm up
+---
 
-- [[Caleb Curry Backend Development mind map]]
+ ## 🚩Lets start
 
-## ☢️ Particle research
-- [[particle findings from Globipay project]]
+ - [ ] Bismillahir rahmanir rahim
+ - [ ] first lets see the backend developers what they tells
+ - [ ] what is the process for 2024 to learn Backend
+
+
+---
+
+
+
+
+
 
 ## 📚 References
 

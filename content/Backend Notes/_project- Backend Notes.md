@@ -8,10 +8,10 @@
 ## 🔕 Todo
 
  - [ ] https://www.youtube.com/watch?v=4UgbU0nzprg
- - [ ] lets experience the Microsoft foundation of coding backend certificate course for some time
  - [ ] I think I have to learn JAVA first
  - [ ] first lets see the backend developers what they tells
  - [ ] what is the process for 2024 to learn Backend
+ - [x] lets experience the Microsoft foundation of coding backend certificate course for some time
 
 
 ---
@@ -19,6 +19,8 @@
 ## 🔕 Have ToDo
 
 - [ ]  Virtual box and sandbox
+
+---
 
 
 

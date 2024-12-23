@@ -2,7 +2,7 @@
 
 - [[_project- Backend Notes]]
 - [[backend dev servers, clubs, channels]]
-- [[How to download any BillibIlli or youtube videos and playlist]]
+- [[How to download any Bilibili or youtube videos and playlist]]
 
 ---
 

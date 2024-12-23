@@ -2,6 +2,7 @@
 
 - [[_project- Backend Notes]]
 - [[backend dev servers, clubs, channels]]
+- [[How to download any BillibIlli or youtube videos and playlist]]
 
 ---
 
@@ -35,11 +36,27 @@
 
 
 
+## Microservice Udemy course quick notes
+
+coming soon...
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 📚 References
 
 - [[caleb curry backend development mind map]]
+- [[difference between a library and a dependency 1]]
+- [[class 10 - Creating a Spring Boot project]]
 - Roadmap from BS23 source: _abdullah  
   ![[Roadmap_from_BS23.html]]  
-
 

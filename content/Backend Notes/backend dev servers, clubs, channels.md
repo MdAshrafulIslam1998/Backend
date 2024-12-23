@@ -8,3 +8,7 @@ https://www.reddit.com/r/Backend/
 https://www.youtube.com/@laurspilca
 
 
+## stacks
+https://softwareengineering.stackexchange.com/
+
+

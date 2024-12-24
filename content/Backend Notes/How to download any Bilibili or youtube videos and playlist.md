@@ -77,7 +77,7 @@ yt-dlp --cookies-from-browser chrome -P "<DOWNLOAD_PATH>" -f "best" "<VIDEO_URL>
    ```bash
    yt-dlp -o "%(title)s.%(ext)s" -P "<DOWNLOAD_PATH>" -f "best" "<VIDEO_URL>"
    ```
-2. Resume an interrupted download by simply rerunning the command. `yt-dlp` will pick up where it left off.
+2. Resume an interrupted download by simply rerunning the same command you ran at the beginning. it will check if the file/ files are downloaded or not.. then it will download the rest of the files. `yt-dlp` will pick up where it left off.
 
 
 ---
@@ -93,5 +93,12 @@ yt-dlp -P "D:\\Videos\\Bilibili" -f "30080+30216" --sleep-interval 3 --max-sleep
 ```bash
 yt-dlp -P "D:\\Videos\\YouTube" -f "best" "https://www.youtube.com/watch?v=example"
 ```
+
+
+### Example of bilibili
+```bash
+yt-dlp -P "D:\mass downloader\[NEW] Master Microservices with SpringBoot,Docker,Kubernetes" -f "30080+30216" --sleep-interval 3 --max-sleep-interval 8 "https://www.bilibili.com/video/BV1gH4y1M7os"
+```
+
 
 

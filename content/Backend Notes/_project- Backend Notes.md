@@ -2,6 +2,7 @@
 
 - [[_project- Backend Notes]]
 - [[backend dev servers, clubs, channels]]
+- [[how to download any bilibili or youtube playlist]]
 - [[make mock CRUD api in a second]]
 
 ---

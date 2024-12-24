@@ -2,7 +2,8 @@
 
 - [[_project- Backend Notes]]
 - [[backend dev servers, clubs, channels]]
-- [[How to download any Bilibili or youtube videos and playlist]]
+- [[how to download any Bilibili or youtube videos and playlist]]
+- [[make mock CRUD api in a second]]
 
 ---
 
@@ -10,7 +11,7 @@
 
  - [ ] watch first some lectures from microservice courses and their tools
  - [ ] then start spring framework basics
- - [ ] I think I have to learn JAVA first
+ - [ ] i think I have to learn JAVA first
  - [ ] first lets see the backend developers what they tells
  - [ ] what is the process for 2024 to learn Backend
 
@@ -29,7 +30,7 @@
 
 ## 🔕 Have ToDo
 
-- [ ]  Virtual box and sandbox
+- [ ] virtual box and sandbox
 - [ ] virtual environment is a must -- fed up with environment setup
 
 ---
@@ -55,8 +56,7 @@ coming soon...
 ## 📚 References
 
 - [[caleb curry backend development mind map]]
-- [[difference between a library and a dependency 1]]
-- [[class 10 - Creating a Spring Boot project]]
+- [[difference between a library and a dependency]]
 - Roadmap from BS23 source: _abdullah  
   ![[Roadmap_from_BS23.html]]  
 

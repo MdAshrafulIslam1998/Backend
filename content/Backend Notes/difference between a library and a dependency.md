@@ -11,6 +11,7 @@ However, I don't get what the difference should be between a library and a depen
 So is there any difference? Or is saying "a database relies on specific libraries and dependencies" the same as "a database relies on specific libraries" ?
 
 ##  answer
-
 ![[Pasted image 20241221103931.png]]
 ![[Pasted image 20241221103745.png]]
+
+answer screenshots

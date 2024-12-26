@@ -100,5 +100,8 @@ yt-dlp -P "D:\\Videos\\YouTube" -f "best" "https://www.youtube.com/watch?v=examp
 yt-dlp -P "D:\mass downloader\[NEW] Master Microservices with SpringBoot,Docker,Kubernetes" -f "30080+30216" --sleep-interval 3 --max-sleep-interval 8 "https://www.bilibili.com/video/BV1gH4y1M7os"
 ```
 
+### Example of youtube playlist 1080
 
-
+```bash
+yt-dlp -P "folder path" -f "137+140" --sleep-interval 3 --max-sleep-interval 8 "playlist link"
+```

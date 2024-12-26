@@ -42,18 +42,18 @@ example:
 yt-dlp -P "D:\downloads" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep-interval 8 "https://www.bilibili.com/video/BV1gH4y1M7os"
 ```
 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
+- 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+- 
 # ⚠️ Extra resources
 ## Steps to Download Videos
 

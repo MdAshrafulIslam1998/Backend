@@ -1,5 +1,5 @@
 ## 🟥 Prerequisites
-1. Download and install Python from [python.org](https://www.python.org/).
+1. You have to have python installed in your machine.
 2. keep this exe on "C:\Windows\System32" folder
    ![[yt-dlp.exe]]
 3. Install `yt-dlp` using the following command:
@@ -7,6 +7,9 @@
    pip install yt-dlp
    ```
 
+- 
+- 
+- 
 
 ## 🟥 simple way
 ### 👉 Youtube playlist/single video
@@ -43,16 +46,21 @@ yt-dlp -P "D:\downloads" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep
 ```
 
 - 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 # ⚠️ Extra resources
 ## Steps to Download Videos
@@ -153,3 +161,10 @@ yt-dlp -P "D:\mass downloader\[NEW] Master Microservices with SpringBoot,Docker,
 ```bash
 yt-dlp -P "folder path" -f "137+140" --sleep-interval 3 --max-sleep-interval 8 "playlist link"
 ```
+
+
+
+
+
+
+

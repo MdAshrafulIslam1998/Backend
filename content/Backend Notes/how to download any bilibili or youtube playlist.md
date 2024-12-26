@@ -11,7 +11,19 @@
 - 
 - 
 
-## 🟥 simple way
+## 🟥 AHK script version by _ashraful
+
+1. install Autohotkey on your machine
+   ![[AutoHotkey_1.1.37.01_setup 1.exe]]
+2. download this script
+   ![[ytdl_downloader_by_ashraful.ahk]]
+3. now every time you run this script you can download using GIU
+
+- 
+- 
+- 
+
+## 🟥 simple cli way
 ### 👉 Youtube playlist/single video
 
 ```bash

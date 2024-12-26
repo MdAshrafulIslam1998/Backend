@@ -1,4 +1,4 @@
-## Prerequisites
+## 🟥 Prerequisites
 1. Download and install Python from [python.org](https://www.python.org/).
 2. keep this exe on "C:\Windows\System32" folder
    ![[yt-dlp.exe]]
@@ -8,14 +8,14 @@
    ```
 
 
-## simple way
-### Youtube playlist/single video
+## 🟥 simple way
+### 👉 Youtube playlist/single video
 
 ```bash
 yt-dlp -P "folder path" -f "137+140" --sleep-interval 3 --max-sleep-interval 8 "playlist link / single video link"
 ```
 
-example:
+> **example:**
 
 - for 1080p
 ```bash
@@ -27,9 +27,10 @@ yt-dlp -P "D:\downloades" -f "137+140" --sleep-interval 3 --max-sleep-interval 8
 yt-dlp -P "D:\downloades" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep-interval 8 "https://www.youtube.com/playlist?list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW"
 ```
 
+
 ---
 
-### Bilibili playlist or single video
+### 👉 Bilibili playlist or single video
 
 ```bash
 yt-dlp -P "folder path" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep-interval 8 "playlist name with playlist code from bilibili"
@@ -53,7 +54,7 @@ yt-dlp -P "D:\downloads" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep
 .
 .
 .
-# Extra resources
+# ⚠️ Extra resources
 ## Steps to Download Videos
 
 ### 1. Open Command Prompt as Administrator

@@ -28,9 +28,7 @@ Gui, Add, Text, xm y+15 vFormatInstructions, To merge video and audio files into
 Gui, Add, Text, xm y+15 vCustomFormatLabel, Put Format ID here:
 Gui, Add, Edit, xm+150 yp-4 w200 vCustomFormat
 
-; Format list display
-Gui, Add, Text, xm y+20 vFormatListLabel, Available Formats:
-Gui, Add, Edit, xm y+5 w600 h200 vFormatList ReadOnly VScroll
+
 
 ; Folder selection
 Gui, Add, Text, xm y+20, Choose Download Folder:
@@ -49,7 +47,7 @@ Quality := "custom"
 QualityCustomState := 1  ; Initialize the state variable for custom format
 Return
 
-; Check available formats
+
 CheckFormats:
 Gui, Submit, NoHide
 if (Link = "") {
@@ -57,26 +55,12 @@ if (Link = "") {
     Return
 }
 
-; Run yt-dlp to get format list
-RunWait, %ComSpec% /c yt-dlp --list-formats "%Link%" > formats.txt,, Hide
-FileRead, RawOutput, formats.txt
+; Build the command string
+Command := "yt-dlp --list-formats """ Link """"
 
-; Clean up the output to show only the format list
-FormatList := ""
-InFormatSection := false
-Loop, Parse, RawOutput, `n, `r
-{
-    if (InStr(A_LoopField, "[info] Available formats")) {
-        InFormatSection := true
-        FormatList .= A_LoopField "`n"
-    }
-    else if (InFormatSection && RegExMatch(A_LoopField, "^(\d|ID|---)")) {
-        FormatList .= A_LoopField "`n"
-    }
-}
 
-GuiControl,, FormatList, %FormatList%
-FileDelete, formats.txt
+; Open a terminal, paste the command, and run it
+Run, powershell -NoExit -Command "%Command%",, Normal
 Return
 
 ; Set quality on radio selection
@@ -91,15 +75,13 @@ if (QualityCustomState = 1) {
     GuiControl, Show, FormatInstructions
     GuiControl, Show, CustomFormatLabel
     GuiControl, Show, CustomFormat
-    GuiControl, Show, FormatListLabel
-    GuiControl, Show, FormatList
+
 } else {
     GuiControl, Hide, CheckFormatsBtn
     GuiControl, Hide, FormatInstructions
     GuiControl, Hide, CustomFormatLabel
     GuiControl, Hide, CustomFormat
-    GuiControl, Hide, FormatListLabel
-    GuiControl, Hide, FormatList
+
 }
 
 if (Quality1080State = 1) {

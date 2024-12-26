@@ -12,30 +12,102 @@ Gui, Font, s9
 Gui, Add, Text, xm y+30, Enter Video/Playlist Link:
 Gui, Add, Edit, xm+150 yp-4 w400 vLink
 
+; Quality selection (reordered and vertically stacked)
 Gui, Add, Text, xm y+20, Select Quality:
-Gui, Add, Radio, xm+150 yp-4 vQuality1080 gSetQuality, 1080p
-Gui, Add, Radio, xp+80 yp vQualityBest gSetQuality, Best Quality
+Gui, Add, Radio, xm+150 yp-4 vQualityCustom gSetQuality Checked, Custom Format
+Gui, Add, Radio, xm+150 y+10 vQualityBest gSetQuality, Best Quality
+Gui, Add, Radio, xm+150 y+10 vQuality1080 gSetQuality, 1080p
 
+; Custom format section (visible by default now)
+Gui, Add, Button, xm+150 y+15 w120 vCheckFormatsBtn gCheckFormats, Check Formats
+
+; Format instructions
+Gui, Add, Text, xm y+15 vFormatInstructions, To merge video and audio files into one file, use: videoonlyID+audioonlyID (e.g., 137+140)
+
+; Custom format input with updated label
+Gui, Add, Text, xm y+15 vCustomFormatLabel, Put Format ID here:
+Gui, Add, Edit, xm+150 yp-4 w200 vCustomFormat
+
+; Format list display
+Gui, Add, Text, xm y+20 vFormatListLabel, Available Formats:
+Gui, Add, Edit, xm y+5 w600 h200 vFormatList ReadOnly VScroll
+
+; Folder selection
 Gui, Add, Text, xm y+20, Choose Download Folder:
 Gui, Add, Button, xm+150 yp-4 gSelectFolder, Browse
 Gui, Add, Text, xm+150 y+10 w400 vFolderText
 
-; Action buttons at the bottom with proper spacing
+; Action buttons at the bottom
 Gui, Add, Button, xm y+30 gStartDownload w200, Start Download
 Gui, Add, Button, xp+220 yp gExit w200, Exit
 
 ; Show GUI
 Gui, Show,, Quick Downloader
+
+; Initialize the custom format sections as visible since it's checked by default
+Quality := "custom"
+QualityCustomState := 1  ; Initialize the state variable for custom format
+Return
+
+; Check available formats
+CheckFormats:
+Gui, Submit, NoHide
+if (Link = "") {
+    MsgBox, Please enter a video link first.
+    Return
+}
+
+; Run yt-dlp to get format list
+RunWait, %ComSpec% /c yt-dlp --list-formats "%Link%" > formats.txt,, Hide
+FileRead, RawOutput, formats.txt
+
+; Clean up the output to show only the format list
+FormatList := ""
+InFormatSection := false
+Loop, Parse, RawOutput, `n, `r
+{
+    if (InStr(A_LoopField, "[info] Available formats")) {
+        InFormatSection := true
+        FormatList .= A_LoopField "`n"
+    }
+    else if (InFormatSection && RegExMatch(A_LoopField, "^(\d|ID|---)")) {
+        FormatList .= A_LoopField "`n"
+    }
+}
+
+GuiControl,, FormatList, %FormatList%
+FileDelete, formats.txt
 Return
 
 ; Set quality on radio selection
 SetQuality:
 GuiControlGet, Quality1080State,, Quality1080
 GuiControlGet, QualityBestState,, QualityBest
+GuiControlGet, QualityCustomState,, QualityCustom
+
+; Show/Hide custom format controls
+if (QualityCustomState = 1) {
+    GuiControl, Show, CheckFormatsBtn
+    GuiControl, Show, FormatInstructions
+    GuiControl, Show, CustomFormatLabel
+    GuiControl, Show, CustomFormat
+    GuiControl, Show, FormatListLabel
+    GuiControl, Show, FormatList
+} else {
+    GuiControl, Hide, CheckFormatsBtn
+    GuiControl, Hide, FormatInstructions
+    GuiControl, Hide, CustomFormatLabel
+    GuiControl, Hide, CustomFormat
+    GuiControl, Hide, FormatListLabel
+    GuiControl, Hide, FormatList
+}
+
 if (Quality1080State = 1) {
     Quality := "1080p"
 } else if (QualityBestState = 1) {
     Quality := "best"
+} else if (QualityCustomState = 1) {
+    Quality := "custom"
 }
 Return
 
@@ -49,8 +121,22 @@ Return
 
 StartDownload:
 Gui, Submit, NoHide
-if (Link = "" or DownloadFolder = "") {
-    MsgBox, Please enter a link and select a folder.
+
+; Validate link
+if (Link = "") {
+    MsgBox, Please enter a video/playlist link.
+    Return
+}
+
+; Validate folder selection
+if (DownloadFolder = "") {
+    MsgBox, Please select a download folder.
+    Return
+}
+
+; Validate quality selection
+if (!Quality1080State && !QualityBestState && !QualityCustomState) {
+    MsgBox, Please select a quality option.
     Return
 }
 
@@ -59,6 +145,13 @@ if (Quality = "1080p") {
     Format := "137+140"
 } else if (Quality = "best") {
     Format := "bestvideo+bestaudio"
+} else if (Quality = "custom") {
+    GuiControlGet, CustomFormat
+    if (CustomFormat = "") {
+        MsgBox, Please enter a custom format code.
+        Return
+    }
+    Format := CustomFormat
 }
 
 ; Build the command string
@@ -67,7 +160,6 @@ Command := "yt-dlp -P """ DownloadFolder """ -f """ Format """ --sleep-interval 
 ; Display the command in Command Prompt and then execute it
 FullCommand := ComSpec " /k echo " Command " && " Command
 Run, %FullCommand%,, Normal
-
 ExitApp ; Close the AHK GUI window after starting the download
 Return
 

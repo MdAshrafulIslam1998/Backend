@@ -17,7 +17,7 @@
    ![[AutoHotkey_1.1.37.01_setup 1.exe]]
 2. download this script
    ![[ytdl_downloader_by_ashraful.ahk]]
-3. now every time you run this script you can download using GIU
+3. now every time you run this script you can download using GUI
 
 - 
 - 

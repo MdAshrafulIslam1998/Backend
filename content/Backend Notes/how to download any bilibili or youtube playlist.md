@@ -39,7 +39,7 @@ yt-dlp -P "D:\downloades" -f "bestvideo+bestaudio" --sleep-interval 3 --max-slee
 yt-dlp -P "folder path" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep-interval 8 "playlist name with playlist code from bilibili"
 ```
 
-example:
+example: (please keep the link simple with the video code only)
 
 ```bash
 yt-dlp -P "D:\downloads" -f "bestvideo+bestaudio" --sleep-interval 3 --max-sleep-interval 8 "https://www.bilibili.com/video/BV1gH4y1M7os"
